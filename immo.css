@@ -272,6 +272,78 @@ header{
     
     
 }
+
+
+.formulaire{
+    background-color: black;
+    height: 500px;
+    width: 45%;
+    position: relative;
+    left: 50px;
+    top: 25px;
+
+    justify-content: center;
+    align-items: center;
+    
+    border: #555;
+    box-shadow:  10px 10px 15px rgba(0, 0, 0, 0.5) ;
+    border-radius: 15px;
+}
+.formulaire h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+}
+.pform{
+
+    height: 500px;
+    width: 40%;
+    background-color: red;
+    padding: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #005baa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #003f7f;
+}
+
+.Contact h2 {
+    position: relative;
+    top: -40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
 @media (max-width:800px){
     .navbar,.connect{
         display: none;
