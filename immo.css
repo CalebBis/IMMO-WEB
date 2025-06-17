@@ -14,29 +14,33 @@ header{
     color: black;
     background-color: black;
     border-radius: 10px;
-    position:absolute;
-    top: 0;
-    left: 0;
+    position:relative;
     width: 100%;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.0);
-    
+    padding: 0;
+    margin: 0;
 }
 .logo{
-    margin: 20px; ;
+    margin: 20px; 
+     display: flex;
+    align-items: center;
+    padding: 10px 20px;
     
 }
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    height: 60px;
-    position:absolute;
+    height: 70px;
+    position:relative;
     width: 100%;
-    z-index: 1000;
-    margin-right: 30px;
-    margin-top: 20px;
-    
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px rgba(0, 0, 0, 0.1) solid;
+    transition: scale 0.2 ease;
+    backdrop-filter:blur(4px);
     
 
 }
@@ -47,13 +51,8 @@ a{
     display: flex;
     align-items: center;
     padding: 10px 20px;
-     background-color: black;
-    border-radius: 15px;
-      background-color: rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      border:  rgba(0, 0, 0, 0.1) solid;
-    transition: scale 0.2 ease;
-    backdrop-filter:blur(20px)
+    
+    
 }
 .navbar:hover{
      
@@ -112,6 +111,7 @@ a{
 }
 .toggle_menu_open{
     height: 270px;
+    
 
 }
 .toggle_menu li{
@@ -269,6 +269,9 @@ a{
     width: 20%;
     height: 48%;
      border: #555;
+     border-top: 2px solid #FFFFFF75;
+     border-left: 2px solid #FFFFFF75;
+     border-radius: 15px;
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
     padding: 5px;
     overflow: hidden;
