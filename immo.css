@@ -31,31 +31,29 @@ header{
     justify-content: space-between;
     align-items: center; 
     height: 60px;
-    background-color: black;
-    border-radius: 10px;
     position:absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.0);
     margin-right: 30px;
     margin-top: 20px;
     
     
 
 }
+a{
+    text-decoration: none;
+}
 .navbar{
     display: flex;
     align-items: center;
     padding: 10px 20px;
      background-color: black;
-    border-radius: 20px;
+    border-radius: 15px;
       background-color: rgba(0, 0, 0, 0.1);
       overflow: hidden;
       border:  rgba(0, 0, 0, 0.1) solid;
     transition: scale 0.2 ease;
-    backdrop-filter:
+    backdrop-filter:blur(20px)
 }
 .navbar:hover{
      
