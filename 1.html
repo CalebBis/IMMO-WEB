@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="immo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <div class="logo"> <img src="logo1.jpg" class="img1"><br>NDAKU_IMMO</div>
+            <div class="navbar">
+                <ul >
+                    <li><a href="immo.html">ACCEUIL</a></li>
+                    <li><a href="immo.html" >A PROPOS</a></li>
+                    <li><a href="immo.html" >A LOUER</a></li>
+                    <li><a href="immo.html" >A VENDRE</a></li> 
+                    <li><a href="#contact">CONTACT</a></li> 
+                    <li> <a class="connect" href="#">INSCRIPTION</a></li>
+                </ul>
+            </div>
+               <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+               <div class="toggle_menu">
+                    <li><a href="immo.html" >ACCEUIL</a></li>
+                    <li><a href="immo.html" >A PROPOS</a></li>
+                    <li><a href="immo.html" >A LOUER</a></li>
+                    <li><a href="immo.html" >A VENDRE</a></li> 
+                    <li><a href="#contact">CONTACT</a></li> 
+                    <li><a class="connect" href="#">INSCRIPTION</a></li>
+
+               </div>
+        </div>
+    </header>
+    <section class="section2" >
+        <div class="gallery contenair">
+            
+        </div>
+
+    </section>
+ 
+
+<section class="section2" id="contact">
+                <h2>Contactez-Moi</h2>
+                <div class="pform">
+                <form action="connexion.php" method="POST">
+                    <label>Nom :</label><br>
+                    <input type="text" name="nom"><br><br>
+            
+                    <label>Email :</label><br>
+                    <input type="email" name="email"><br><br>
+            
+                    <label>Message :</label><br>
+                    <textarea name="message" rows="5" cols="40"></textarea><br><br>
+            
+                    <input type="submit" value="Envoyer" class=>
+                </form>
+                <p>Email  : biselengecaleb@gmail.com</p>
+                <p>Téléphone : +243 859830474</p>
+            </div>
+                
+            </div>
+    
+</section>
+
+</section>
+
+<footer>
+    <P>&copy;Mon Agence. Tous droits réservés.</P>
+</footer>
+
+<script>
+    
+  const toggle = document.querySelector('.toggle');
+  const toggleIcon = document.querySelector('.toggle i');
+  const toggleMenu = document.querySelector('.toggle_menu');
+
+  toggle.onclick = function () {
+    toggleMenu.classList.toggle('toggle_menu_open');
+    const isOpen = toggleMenu.classList.contains('toggle_menu_open')
+    toggleIcon.classList = isOpen
+    ?'fa-solid fa-xmark'
+    :'fa-solid fa-bars'
+  }
+
+</script>
+
+
+</body>
+</html>
