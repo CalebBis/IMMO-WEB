@@ -12,17 +12,17 @@ body{
 }
 header{
     color: black;
-    background-color: black;
     border-radius: 10px;
     position:relative;
     width: 100%;
-    z-index: 1000;
+
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.0);
     padding: 0;
     margin: 0;
 }
 .logo{
-    margin: 20px; 
+    margin: 90px; 
      display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -358,6 +358,7 @@ footer{
     }
     .toggle{
         display: block;
+        
     }
 
 }
@@ -378,6 +379,7 @@ footer{
    .toggle_menu{
     width: unset;
     left: 2rem;
+    
 
    }
 }
