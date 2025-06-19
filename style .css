@@ -75,6 +75,10 @@ a{
     scale: 1.05;
     
 }
+.img1{
+    height: 67px;
+    width: auto;
+}
 .toggle{
 
     font-size: 1.5rem;
@@ -142,25 +146,6 @@ a{
 
 
 
-.corps{
-    padding: 20px;
-    background-color:#f9f9f9;
-}
-.acceuil{
-    background-image: url('salon-unfocused-avec-une-image-sur-le-mur.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-}
-.txt_acceuil h1{
-    font-size:32px ;
-    margin-bottom: 20px;
-}
 .btn1{
     background-color: rgb(217, 255, 0);
     color: white;
@@ -174,51 +159,10 @@ a{
     background-color:  rgb(134, 153, 24);
     scale: 1.05;
 }
-.img1{
-    height: 67px;
-    width: auto;
-}
-.a-propos{
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-     border: #555;
-    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
-    padding: 20px;
-    width: auto;
-}
 
-.txt2{
-    
-    height: 70%;
-    width: auto;
-    background-color:#f9f9f9;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
-    
-    
-    
 
-    
-    
-}
-.txt2 h1{
-    text-align: center;
-    position:relative;
-    top:-20px;
-    font-size: 32px;
-    margin-bottom: 20p meme chose;
-}
-.txt2 p{
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
+
+
 .btn2{
     background-color:  rgb(217, 255, 0);
     border-radius: 20px;
@@ -234,26 +178,51 @@ a{
     scale: 1.05;
 }
 
+
+.gallery-contenair{
+    display: flex;
+    flex-wrap:wrap;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    margin: 0px auto;
+
+}
+.gallery-item{
+    flex-basis: 32.7%;
+    margin-bottom: 6px;
+    opacity: 0.85;
+    cursor: pointer;
+
+}
+.gallery-item:hover{
+    opacity: 1;
+}
+.gallery-item img{
+    
+    width: 100%;
+    height: 100%;
+     object-fit: cover;
+    
+}
+/*light box*/
+.lightbox{
+
+}
+
+
 .section2{
-    margin-top: 30px;
-     background-color:white;
+     background-color:rgb(179, 20, 20);
     border: #555;
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
     width: auto;
-    height: 100vh;
-    
-}
-.à-louer{
-    gap: 10px;
-    display: flex;
-    background-color:white;
     height: 100%;
-    width: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     
 }
+
+   
 .btn3{
      background-color:  rgb(217, 255, 0);
     border-radius: 20px;
@@ -273,32 +242,7 @@ a{
 
 
 
-.à-louer div{
-    background-color:white;
-    width: 20%;
-    height: 48%;
-     border: #555;
-     border-top: 2px solid #FFFFFF75;
-     border-left: 2px solid #FFFFFF75;
-     border-radius: 15px;
-    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
-    padding: 5px;
-    overflow: hidden;
-    flex-basis: 270px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.à-louer div:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    
-}
-.à-louer div img{
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    
-    
-}
+
 
 
 .pform{
@@ -359,21 +303,6 @@ footer{
 
 
 
-.gallery-contenair{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    background-color: red;
-
-}
-.gallery-item{
-    flex-basis: 32.7%;
-    margin-bottom: 6px;
-}
-.gallery-item img{
-    width: 100%;
-    height: 100%;
-}
 
 
 

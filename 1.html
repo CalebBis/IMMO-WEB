@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="immo.css">
+    <link rel="stylesheet" href="style .css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
@@ -37,7 +37,13 @@
         </div>
     </header>
     <section class="section2" >
-        <div class="gallery contenair">
+        <div class="gallery-contenair">
+            
+            <div class="gallery-item" data-index="1"><img src="img A_Louer/lingwala 1chb 1sln 550.jpg" alt=""></div>
+            <div class="gallery-item" data-index="2"><img src="img A_Louer/lingwala 1chb 1sln 550 (2).jpg" alt=""></div>
+            <div class="gallery-item" data-index="3"><img src="img A_Louer/lingwala 1chb 1sln 550 (3).jpg" alt=""></div>
+            <div class="gallery-item" data-index="4"><img src="img A_Louer/lingwala 1chb 1sln 550 (4).jpg" alt=""></div>
+            <div class="gallery-item" data-index="5"><img src="img A_Louer/lingwala 1chb 1sln 550 (5).jpg" alt=""></div>
             
         </div>
 
@@ -86,6 +92,30 @@
     ?'fa-solid fa-xmark'
     :'fa-solid fa-bars'
   }
+
+  const galleryItem =document.getElementsByClassName("gallery-item");
+  const lightBoxContainer = document.createElement("div");
+  const lightBoxContent = document.createElement("div");
+  const lightBoxImg = document.createElement("div");
+  const lightBoxPrev = document.createElement("div");
+  const lightBoxNext = document.createElement("div");
+
+  lightBoxContainer.classList.add('lightbox');
+  lightBoxContent.classList.add('lightbox-content');
+  lightBoxPrev.classList.add("fa","fa-angle-left","lightbox-prev");
+  lightBoxNext.classList.add("fa","fa-angle-right","lightbox-next");
+
+   lightBoxContainer.appendChild(lightBoxContent);
+   lightBoxContent.appendChild(lightBoxImg);
+   lightBoxContent.appendChild(lightBoxPrev);
+   lightBoxContent.appendChild(lightBoxNext);
+   document.body.appendChild(lightBoxContainer)
+
+   let index = 1;
+   //creer une fonction 
+
+   function showligh
+
 
 </script>
 
