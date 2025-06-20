@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
-    background-color:#f9f9f9;
+    background-color:rgb(236, 236, 236);
+
 }
 
 html{
@@ -117,6 +119,7 @@ a{
 .toggle_menu_open{
     height: 270px;
     z-index: 1000;
+    display: block;
 
 }
 .toggle_menu li{
@@ -178,23 +181,79 @@ a{
     scale: 1.05;
 }
 
+.section1{
+     background-color:rgb(218, 204, 204);
+    border: #555;
+    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
+    width: auto;
+    max-height: 100%;
+    margin: 20px;
+    
+}
+
+.lt1{
+    display: flex;
+    
+    gap: 20px;
+    padding: 20px;
+    
+    overflow:scroll;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    border: #555;
+    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
+    
+    
+    
+}
+
+
+.txtx{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+     background-color:rgb(255, 253, 253);
+    border: #555;
+    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1);
+    border-radius: 15px;
+
+}
+.btn4{
+    background-color: rgb(217, 255, 0);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.btn4:hover{
+     background-color: rgb(134, 153, 24);
+}
 
 .gallery-contenair{
     display: flex;
     flex-wrap:wrap;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
+    height: auto;
+    width:50% ;
+    background-color: #ffffff;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-    margin: 0px auto;
+    box-shadow: 0 0 3px 15px rgba(0.1,0.1, 0.1, 0.3) ;
+
+    
+    
+    
+
 
 }
+
 .gallery-item{
     flex-basis: 32.7%;
     margin-bottom: 6px;
     opacity: 0.85;
     cursor: pointer;
+    
+    max-height: 50%;
+    max-width: auto;
 
 }
 .gallery-item:hover{
@@ -204,22 +263,76 @@ a{
     
     width: 100%;
     height: 100%;
-     object-fit: cover;
-    
+     object-fit: cover; 
 }
+
+
+
+
+
 /*light box*/
 .lightbox{
+position: fixed;
+display: none;
+background-color: rgba(0, 0, 0, 0.6);
+width: 100%;
+height: 100%;
+overflow: auto;
+top: 0;
+left:0;
 
+}
+.lightbox-content{
+    
+    position: relative;
+    width: 65%;
+    height: 75%;
+    margin: 5% auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content img{
+    max-width: 100%;
+   max-height: 100%;
+    border: 6px solid #fff;
+    object-fit: cover;
+
+}
+
+.lightbox-prev,
+.lightbox-next{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 9px;
+    top: 45%;
+    left: 95%;
+    cursor: pointer;
+    
+}
+.lightbox-prev{
+    left:  0;
+}
+.lightbox-next{
+    right: 1;
+    
 }
 
 
 .section2{
-     background-color:rgb(179, 20, 20);
+     background-color:rgb(255, 255, 255);
     border: #555;
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
     width: auto;
     height: 100%;
-    
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
 }
 
    
@@ -242,66 +355,94 @@ a{
 
 
 
+.form-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 
+.form-container h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
+.form-container h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
-.pform{
-
-    height: 500px;
-    width: 40%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-
+.form-container h1 span {
+  color:  rgb(217, 255, 0);
 }
 
 form {
-    max-width: 500px;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-input[type="text"],
-input[type="email"],
+.form-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
 textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-input[type="submit"] {
-    background-color:   rgb(217, 255, 0);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: scale 0.2 ease;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 16px;
 }
 
-input[type="submit"]:hover {
-    background-color:  rgb(134, 153, 24);
+button {
+  width: 150px;
+  padding: 12px;
+  background-color: rgb(217, 255, 0);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s ease;
 }
 
-.Contact h2 {
-    position: relative;
-    top: -40px;
-    padding-left: 20px;
-    padding-right: 20px;
+button:hover {
+  background-color:  rgb(134, 153, 24);
 }
+
+
+
 footer{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: gray ;
+     background-color: rgba(0, 0, 0, 0.1);
+    border: 2px rgba(0, 0, 0, 0.1) solid;
+    box-shadow: 0 0 3px 15px (0,0,0,0,1);
     height: 60px;
     width: 100%;
 }
-
-
 
 
 
@@ -329,6 +470,16 @@ footer{
 
 }
 
+/* Responsive */
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
 
 
 @media (max-width:1070px){
@@ -338,6 +489,43 @@ footer{
     
 
    }
+   .lt1{
+    flex-direction: column;
+    gap: 30px;
+   }
+   .gallery-contenair{
+     max-height: 50%;
+    max-width:50% ;
+   }
+}
+
+
+@media(max-width:767px){
+.gallery-contenair{
+    width: 100%;
+}
+}
+.gallery-item{
+    flex-basis: 49.80%;
+    margin-bottom: 3px;
+}
+.lightbox-content{
+    width: 80%;
+    height: 60%;
+    margin: 15% auto;
+}
+}
+@media (max-width:480px){
+    .gallery-item{
+        flex-basis: 49.80%;
+        margin-bottom: 3px;
+    }
+    .lightbox-content{
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
 }
   /*smartphone
 
