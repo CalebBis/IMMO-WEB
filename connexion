@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-nous</title>
+  <link rel="stylesheet" href="style3">
+</head>
+<body>
+  <section class="contact-section">
+    <div class="form-container">
+      <h4>Une question ? un conseil ?</h4>
+      <h1><strong>Contactez</strong><span>-nous</span></h1>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Entrer votre nom..." required>
+          <input type="email" placeholder="Entrer votre email..." required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Entrer le Sujet..." required>
+          <input type="tel" placeholder="Entrer votre numero de téléphone" required>
+        </div>
+        <textarea rows="5" placeholder="Entrer votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
