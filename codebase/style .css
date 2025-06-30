@@ -182,11 +182,11 @@ a{
 }
 
 .section1{
-     background-color:rgb(218, 204, 204);
+     background-color:white;
     border: #555;
-    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
+    
     width: auto;
-    max-height: 100%;
+    height: auto;
     margin: 20px;
     
 }
@@ -196,32 +196,50 @@ a{
     
     gap: 20px;
     padding: 20px;
-    
-    overflow:scroll;
-    background-color: rgb(255, 255, 255);
-    height: auto;
-    border: #555;
-    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
-    
-    
+    background-color: rgb(236, 236, 236);
+    height: 50%;
+    width: 100%;
     
 }
+
+ .lt1 {
+           
+        }
+
+        .txtx h3 {
+            color: black;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .txtx p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 10px 0;
+        }
+
+        .txtx b {
+            color: #000;
+        }
+
 
 
 .txtx{
     padding: 20px;
-    width: 100%;
-    height: auto;
-     background-color:rgb(255, 253, 253);
-    border: #555;
-    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1);
-    border-radius: 15px;
+
+            margin: 50px ;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    
 
 }
 .btn4{
     background-color: rgb(217, 255, 0);
     padding: 5px 10px;
     border-radius: 20px;
+    color: white;
 }
 .btn4:hover{
      background-color: rgb(134, 153, 24);
@@ -230,9 +248,12 @@ a{
 .gallery-contenair{
     display: flex;
     flex-wrap:wrap;
-    height: auto;
-    width:50% ;
-    background-color: #ffffff;
+    height: 300px;
+    overflow: scroll;
+    width:auto;
+    margin: 50px auto;
+    flex-basis: 300px;
+    background-color:white;
     border: 2px rgb(255, 255, 255) solid;
     border-radius: 10px;
     padding: 10px;
@@ -271,59 +292,88 @@ a{
 
 
 /*light box*/
-.lightbox{
-position: fixed;
-display: none;
-background-color: rgba(0, 0, 0, 0.6);
-width: 100%;
-height: 100%;
-overflow: auto;
-top: 0;
-left:0;
-
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
 }
-.lightbox-content{
-    
+
+/* Contenu de la lightbox */
+.lightbox-content {
     position: relative;
-    width: 65%;
-    height: 75%;
-    margin: 5% auto;
-    margin-top: 100px;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 60px auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.lightbox-content img{
+.lightbox-content img {
     max-width: 100%;
-   max-height: 100%;
-    border: 6px solid #fff;
-    object-fit: cover;
-
+    max-height: 100%;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    object-fit: contain;
+    animation: zoomIn 0.4s ease;
 }
 
+/* Boutons de navigation */
 .lightbox-prev,
-.lightbox-next{
+.lightbox-next {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 9px;
-    top: 45%;
-    left: 95%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 28px;
+    padding: 10px 18px;
+    border-radius: 50%;
     cursor: pointer;
-    
+    user-select: none;
+    transition: background-color 0.3s ease;
 }
-.lightbox-prev{
-    left:  0;
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
-.lightbox-next{
-    right: 1;
-    
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+/* Bouton de fermeture */
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
 }
 
 
 .section2{
-     background-color:rgb(255, 255, 255);
+     background-color:rgb(130, 0, 0);
     border: #555;
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
     width: auto;
@@ -356,12 +406,14 @@ left:0;
 
 
 .form-container {
-  background-color: #ffffff;
+  background-color: white;
   padding: 40px;
-  border-radius: 20px;
+  
   width: 100%;
   margin: auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+   border: #555;
+    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
+    
 }
 
 .form-container h4 {
@@ -447,6 +499,7 @@ footer{
 
 
 
+
 @media (max-width:1070px){
     .navbar,.connect{
         display: none;
@@ -474,6 +527,7 @@ footer{
 @media (max-width: 600px) {
   .form-group {
     flex-direction: column;
+    
   }
 
   button {
@@ -494,8 +548,8 @@ footer{
     gap: 30px;
    }
    .gallery-contenair{
-     max-height: 50%;
-    max-width:50% ;
+     max-height:50%;
+    max-width:50%;
    }
 }
 
