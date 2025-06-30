@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color:#f9f9f9;
+     background-color:rgb(236, 236, 236);
+     
 }
 
 html{
@@ -13,17 +14,18 @@ html{
 
 header{
     color: black;
+    background-color: black;
     border-radius: 10px;
     position:relative;
     width: 100%;
-
-    height: 300px;
+    z-index: 1000;
     background-color: rgba(0, 0, 0, 0.0);
     padding: 0;
     margin: 0;
+    position: fixed;
 }
 .logo{
-    margin: 90px; 
+    margin: 20px; 
      display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -178,56 +180,74 @@ a{
     height: 67px;
     width: auto;
 }
-.a-propos{
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-     border: #555;
-    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
-    padding: 20px;
-    width: auto;
-}
+
 
 .txt2{
     
-    height: 70%;
+    height: auto;
     width: auto;
     background-color:#f9f9f9;
     padding: 20px;
-    border-radius: 15px;
+    margin: 20px;
+    
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
     
     
-    
+}
+.txt2 h2 {
+            font-size: 32px;
+            color: black;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
 
-    
-    
-}
-.txt2 h1{
-    text-align: center;
-    position:relative;
-    top:-20px;
-    font-size: 32px;
-    margin-bottom: 20p meme chose;
-}
-.txt2 p{
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
+        .txt2 h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .txt2 p {
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .txt2 b {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: black;
+        }
+
+        .btn2 {
+            display: inline-block;
+            background-color: #004aad;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn2:hover {
+            background-color: #003080;
+        }
+
+
 .btn2{
     background-color:  rgb(217, 255, 0);
     border-radius: 20px;
-    padding: 10px 10px;
+    padding: 5px 10px;
     color: rgb(21, 17, 17);
     font-weight: bolder;
-    position: relative;
-    top: 15px;
     transition: scale 0.2 ease;
+    color: white;
 }
 .btn2:hover{
     background-color:  rgb(134, 153, 24);
@@ -235,20 +255,21 @@ a{
 }
 
 .section2{
-    margin-top: 30px;
-     background-color:white;
+    margin: 20px;
+     background-color:#fff;
     border: #555;
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
     width: auto;
-    height: 100vh;
+    height: auto;
+    padding: 10px;
     
 }
 .à-louer{
     gap: 10px;
     display: flex;
     background-color:white;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -257,13 +278,12 @@ a{
 .btn3{
      background-color:  rgb(217, 255, 0);
     border-radius: 20px;
-    padding:5px;
     color: rgb(21, 17, 17);
     font-weight: bolder;
-    position: relative;
-    top: 15px;
-    transition: scale 0.2 ease;
+     transition: background-color 0.3s ease;
     padding: 5px 10px;
+    color: white;
+    
 
 }
 .btn3:hover{
@@ -276,16 +296,12 @@ a{
 .à-louer div{
     background-color:white;
     width: 20%;
-    height: 48%;
+    height: auto;
      border: #555;
-     border-top: 2px solid #FFFFFF75;
-     border-left: 2px solid #FFFFFF75;
-     border-radius: 15px;
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
     padding: 5px;
-    overflow: hidden;
-    flex-basis: 270px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    flex-basis: 300px;
 }
 .à-louer div:hover{
     transform: translateY(-10px);
@@ -302,52 +318,93 @@ a{
 }
 
 
-.pform{
 
-    height: 500px;
-    width: 40%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+.form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 
+.form-container h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form-container h1 span {
+  color: rgb(217, 255, 0);
 }
 
 form {
-    max-width: 500px;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-input[type="text"],
-input[type="email"],
+.form-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
 textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-input[type="submit"] {
-    background-color:   rgb(217, 255, 0);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: scale 0.2 ease;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 16px;
 }
 
-input[type="submit"]:hover {
-    background-color:  rgb(134, 153, 24);
+button {
+  width: 150px;
+  padding: 12px;
+  background-color: rgb(217, 255, 0);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: center;
+   transition: background-color 0.3s ease;
 }
 
-.Contact h2 {
-    position: relative;
-    top: -40px;
-    padding-left: 20px;
-    padding-right: 20px;
+button:hover {
+  background-color: rgb(134, 153, 24);
 }
+/* Formulaire connexion*/
+.form-connexion{
+     background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+
 footer{
     display: flex;
     text-align: center;
@@ -378,13 +435,13 @@ footer{
 
 
 
+
 @media (max-width:1070px){
     .navbar,.connect{
         display: none;
     }
     .toggle{
         display: block;
-        
     }
     .toggle_menu{
         display: block;
@@ -394,52 +451,33 @@ footer{
 @media(max-width:1500px ){
     .section2{
         height: 100%;
-        width: auto;
-        
+        width: auto;  
     }
-    
-
 
 }
 
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
 
+  button {
+    width: 100%;
+  }
+}
 
 @media (max-width:1070px){
    .toggle_menu{
     width: unset;
     left: 2rem;
-    
-
    }
 }
-  /*smartphone
 
-     .à-louer div{
-        height: 325px;
-        width: auto;
-        
-    }
-}
-/*Tablette*
-@media (min-width:600px) and (max-width:1024px) {
-     .à-louer div{
-        height: 325px;
-        width: auto;
-        background-color: white;}
- 
-}
- */
-
-/*Petits pc*/
 @media (max-width:1000px){
     .pform{
     width: 70%;
  }
-
-
 }
-
-
 
 @media (max-width:1500px){
     .à-louer div{
